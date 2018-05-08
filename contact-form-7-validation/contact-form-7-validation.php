@@ -25,9 +25,9 @@ Class ContactForm7Validation {
     
     foreach ($results as $form) {
         $form_data  = unserialize( $form->form_value );
-        $email = $form_data['id:email'];
+        $email = $form_data['id:contact_email'];
         // Validate contact email existed
-        if ($email == $_POST['id:email']) {
+        if (trim($email) == trim($_POST['id:contact_email'])) {
           $result->invalidate( $tag, "This email has already registered.");
           break;
         }
@@ -36,8 +36,19 @@ Class ContactForm7Validation {
     return $result;
   }
   function custom_text_confirmation_validation_filter( $result, $tag ) {
-    // $tag = new WPCF7_FormTag( $tag );
-    // $result->invalidate( $tag,  $_POST['id:first_name'] );
+    $tag = new WPCF7_FormTag( $tag );
+    $results = $this->get_current_form_data();
+    
+    foreach ($results as $form) {
+        $form_data  = unserialize( $form->form_value );
+        $team_name= $form_data['id:team_name'];
+        // Validate team name existed
+        if (trim($team_name) == trim($_POST['id:team_name'])) {
+          $result->invalidate( $tag, "This Team name has already registered. Please choose another name");
+          break;
+        }
+    }
+    
     return $result;
   }
   function get_current_form_data() {
