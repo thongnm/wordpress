@@ -1,4 +1,13 @@
 <style type="text/css">
+  .vivaco-3455 .vc_custom_heading {
+    color: white !important;
+    text-align: center;
+    background-color: #96989e;
+    line-height: 51px;
+    width: 110%;
+    margin-left: -30px;
+    margin-top: -55px;
+  }
   .kms-registration-form .nav>li>a {
     text-align: left;
     color: #0c0c0c;
@@ -54,8 +63,12 @@
   }
   .form-response div.wpcf7-response-output {
     padding: 0px !important;
-    margin-top:-20px !important;
+    margin-top: -20px !important;
   }
+  .kms-registration-form label.error, span.wpcf7-not-valid-tip {
+    color:red !important;
+  }
+
 </style>
 <div class="form-response">
     [response]
@@ -313,8 +326,13 @@
     </div>
   </fieldset>
   <fieldset class="col-sm-12">
+  <fieldset class="col-sm-4">
     [checkbox* id:is_regulations "Regulations"]
   </fieldset>
+  <!-- <fieldset class="col-sm-8">
+    [recaptcha id:recaptcha]
+  </fieldset> -->
+</fieldset>
   <fieldset class="col-sm-12 align-center" style="text-align: center;">
     [submit class:btn "submit"]
   </fieldset>
