@@ -68,7 +68,9 @@
   .kms-registration-form label.error, span.wpcf7-not-valid-tip {
     color:red !important;
   }
-
+  .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ng {
+    color: red;
+  }
 </style>
 <div class="form-response">
     [response]
@@ -326,10 +328,8 @@
     </div>
   </fieldset>
   <fieldset class="col-sm-12">
-  <fieldset class="col-sm-4">
-    [checkbox* id:is_regulations "Regulations"]
+    [acceptance accepted-regulations][/acceptance] By clicking on this checkbox, I agree to the <a href="#" onclick='window.open("/#regulations");return false;'>Regulations</a>
   </fieldset>
-</fieldset>
   <fieldset class="col-sm-12 align-center" style="text-align: center;">
     [submit class:btn "submit"]
   </fieldset>
