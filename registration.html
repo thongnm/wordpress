@@ -1,13 +1,21 @@
 <style type="text/css">
+  .vivaco-3455 {
+    font-family: Montserrat;
+  }
   .vivaco-3455 .vc_custom_heading {
     color: white !important;
     text-align: center;
     background-color: #27a9e1;
-    line-height: 51px;
+    line-height: 27px;
     width: 110%;
     margin-left: -30px;
-    margin-top: -55px;
+    margin-top: 0px;
   }
+  @media only screen and (max-width: 450px) {
+    .vivaco-3455 .vc_custom_heading {
+      margin-top: -10px;
+    }
+  } 
   .form fieldset {
     padding-bottom: 5px !important;
   }
@@ -61,7 +69,6 @@
   .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ng {
     color: red;
   }
-
   .kms-registration-form .panel-default .panel-heading{
     background-color: #27a9e1;
   }
@@ -85,8 +92,8 @@
 </div>
 
 <div class="form kms-registration-form">
-  <div class="panel panel-default">
-    <div class="panel-heading" style="text-align: left">Team Members</div>
+  <div class="panel panel-default" style="border-color: #27a9e1;">
+    <div class="panel-heading" style="text-align: left; background-color: #27a9e1; color: white;">Team Members</div>
     <div class="panel-body">
       <fieldset class="col-sm-12">
         <ul class="nav nav-tabs">
