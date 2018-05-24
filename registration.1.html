@@ -1,0 +1,320 @@
+<style type="text/css">
+  .vivaco-3455 {
+    font-family: Montserrat;
+  }
+  .vivaco-3455 .vc_custom_heading {
+    margin-top: 36px;
+    margin-left: 20px;
+    text-align: left;
+    color: #3E3E3E;
+    font-weight: bold;
+  }
+  .form fieldset {
+    padding-bottom: 5px !important;
+  }
+  .kms-registration-form .vc_icon_element,
+  .kms-registration-form .vc_icon_element div {
+    display: inline !important;
+    color: inherit;
+  }
+  .kms-registration-form .vc_icon_element {
+    padding-right: 19px;
+  }
+  .kms-registration-form .vc_icon_element-icon {
+    color: inherit;
+  }
+  .kms-registration-form br {
+    display: none;
+  }
+  .kms-registration-form span .wpcf7-not-valid {
+    border: 1px solid #ff0000 !important;
+  }
+  .kms-registration-form span.idis_regulations .wpcf7-not-valid {
+    border: none !important;
+  }
+  .kms-registration-form textarea:not(textarea),
+  input[type=text]:not(textarea),
+  input[type=url]:not(textarea),
+  input[type=tel]:not(textarea),
+  input[type=number]:not(textarea),
+  input[type=color]:not(textarea),
+  input[type=email]:not(textarea),
+  input[type=email]:not(textarea),
+  input[type=password]:not(textarea) {
+    height: 40px !important;
+  }
+  .form-response div.wpcf7-response-output {
+    padding: 0px !important;
+    margin-top: -20px !important;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .kms-registration-form label.error,
+  span.wpcf7-not-valid-tip {
+    color: red !important;
+  }
+  .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ng {
+    color: red;
+  }
+  .members-body .nav-tabs {
+    border-bottom: none;
+  }
+  .members-body .tab-icon {
+    text-align: center;
+  }
+  .members-body li {
+    width: 80px;
+    height: 85px;
+  }
+  @media only screen and (min-width: 780px) {
+    .members-body li.active .tab-indicator {
+      display: block;
+    }
+  } 
+  .members-body {
+    margin-top: -25px;
+  }
+  .members-body li .tab-indicator {
+    display: none;
+  }
+  .members-body li a {
+    border: none !important;
+  }
+  .members-body .member-no {
+    margin-top:5px;
+  }
+  .members-body .tab-content {
+    margin-top: 25px;
+  }
+  .members-body .members-content {
+    background-color: #F2F8FB;
+  }
+  .members-body .tab-icon .vc_icon_element-icon {
+    margin-left: 10px;
+  }
+  .members-body .tab-indicator {
+    margin-top: -1px;
+  }
+  .members-body .tab-indicator span.vc_icon_element-icon.fa.fa-angle-up {
+    color: #f2f8fb;
+    font-size: 10em !important;
+    font-weight: bold;
+  }
+  .members-label h5 {
+    color: #3E3E3E;
+    font-weight: bold;
+  }
+  .vivaco-3455 .modal-box .wpcf7-submit[disabled] {
+    background:#a19a9a !important; 
+  }
+</style>
+<div class="form-response">
+  [response]
+</div>
+<div class="form align-center kms-registration-form">
+  <fieldset class="col-sm-6">
+    [text* id:team_name team_name maxlength:150 placeholder "Team Name"]
+  </fieldset>
+  <fieldset class="col-sm-6">
+    [email* id:contact_email contact_email maxlength:150 placeholder "Contact Email"]
+  </fieldset>
+  <fieldset class="col-sm-12">
+    <div class="members-label">
+      <h5>MEMBERS</h5>
+    </div>
+    <div>
+      * Min 4 pax
+    </div>
+  </fieldset>
+  <fieldset class="col-sm-12">
+    <div class="members-body">
+      <fieldset class="col-sm-12">
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a data-toggle="tab" href="#member1">
+              <div class="tab-icon">
+                [vc_icon icon_fontawesome="fa fa-user-circle"] <div class="member-no">1</div>
+                <div class="tab-indicator">[vc_icon icon_fontawesome="fa fa-angle-up"]</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#member2">
+              <div class="tab-icon">
+                [vc_icon icon_fontawesome="fa fa-user-circle"] <div class="member-no">2</div>
+                <div class="tab-indicator">[vc_icon icon_fontawesome="fa fa-angle-up"]</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#member3">
+              <div class="tab-icon">
+                [vc_icon icon_fontawesome="fa fa-user-circle"] <div class="member-no">3</div>
+                <div class="tab-indicator">[vc_icon icon_fontawesome="fa fa-angle-up"]</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#member4">
+              <div class="tab-icon">
+                [vc_icon icon_fontawesome="fa fa-user-circle"] <div class="member-no">4</div>
+                <div class="tab-indicator">[vc_icon icon_fontawesome="fa fa-angle-up"]</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#member5">
+              <div class="tab-icon">
+                [vc_icon icon_fontawesome="fa fa-user-circle"] <div class="member-no">5</div>
+                <div class="tab-indicator">[vc_icon icon_fontawesome="fa fa-angle-up"]</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#member6">
+              <div class="tab-icon">
+                [vc_icon icon_fontawesome="fa fa-user-circle"] <div class="member-no">6</div>
+                <div class="tab-indicator">[vc_icon icon_fontawesome="fa fa-angle-up"]</div>
+              </div>
+            </a>
+          </li>
+          
+
+        </ul>
+      </fieldset>
+      <fieldset class="col-sm-12 members-content">
+        <div class="tab-content">
+          <div id="member1" class="tab-pane fade in active">
+            <div class="member">
+              <fieldset class="col-sm-6">
+                [text* id:member1_name member1_name maxlength:150 placeholder "Name"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [email* id:member1_email member1_email maxlength:150 placeholder "Email"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [tel* id:member1_phone member1_phone maxlength:150 placeholder "Phone"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [text* id:member1_job_title member1_job_title maxlength:150 placeholder "Job Title"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [text* id:member1_work_place member1_work_place maxlength:150 placeholder "Work Place"]
+              </fieldset>
+
+            </div>
+          </div>
+          <div id="member2" class="tab-pane fade in">
+            <div class="member">
+              <fieldset class="col-sm-6">
+                [text* id:member2_name member2_name maxlength:150 placeholder "Name"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [email* id:member2_email member2_email maxlength:150 placeholder "Email"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [tel* id:member2_phone member2_phone maxlength:150 placeholder "Phone"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [text* id:member2_job_title member2_job_title maxlength:150 placeholder "Job Title"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [text* id:member2_work_place member2_work_place maxlength:150 placeholder "Work Place"]
+              </fieldset>
+
+            </div>
+          </div>
+          <div id="member3" class="tab-pane fade in">
+            <div class="member">
+              <fieldset class="col-sm-6">
+                [text* id:member3_name member3_name maxlength:150 placeholder "Name"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [email* id:member3_email member3_email maxlength:150 placeholder "Email"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [tel* id:member3_phone member3_phone maxlength:150 placeholder "Phone"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [text* id:member3_job_title member3_job_title maxlength:150 placeholder "Job Title"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [text* id:member3_work_place member3_work_place maxlength:150 placeholder "Work Place"]
+              </fieldset>
+
+            </div>
+          </div>
+          <div id="member4" class="tab-pane fade in">
+            <div class="member">
+              <fieldset class="col-sm-6">
+                [text* id:member4_name member4_name maxlength:150 placeholder "Name"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [email* id:member4_email member4_email maxlength:150 placeholder "Email"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [tel* id:member4_phone member4_phone maxlength:150 placeholder "Phone"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [text* id:member4_job_title member4_job_title maxlength:150 placeholder "Job Title"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [text* id:member4_work_place member4_work_place maxlength:150 placeholder "Work Place"]
+              </fieldset>
+
+            </div>
+          </div>
+          <div id="member5" class="tab-pane fade in">
+            <div class="member">
+              <fieldset class="col-sm-6">
+                [text id:member5_name member5_name maxlength:150 placeholder "Name"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [email id:member5_email member5_email maxlength:150 placeholder "Email"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [tel id:member5_phone member5_phone maxlength:150 placeholder "Phone"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [text id:member5_job_title member5_job_title maxlength:150 placeholder "Job Title"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [text id:member5_work_place member5_work_place maxlength:150 placeholder "Work Place"]
+              </fieldset>
+
+            </div>
+          </div>
+          <div id="member6" class="tab-pane fade in">
+            <div class="member">
+              <fieldset class="col-sm-6">
+                [text id:member6_name member6_name maxlength:150 placeholder "Name"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [email id:member6_email member6_email maxlength:150 placeholder "Email"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [tel id:member6_phone member6_phone maxlength:150 placeholder "Phone"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [text id:member6_job_title member6_job_title maxlength:150 placeholder "Job Title"]
+              </fieldset>
+              <fieldset class="col-sm-6">
+                [text id:member6_work_place member6_work_place maxlength:150 placeholder "Work Place"]
+              </fieldset>
+
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </fieldset>
+</div>
+
+
+<fieldset class="col-sm-12">
+  [acceptance accepted-regulations][/acceptance] By clicking on this checkbox, I agree to the <a href="#" onclick='window.open("/#regulations");return false;'>Regulations.</a>
+</fieldset>
+<fieldset class="col-sm-12 align-center" style="text-align: center;">
+  [submit class:btn "submit"]
+</fieldset>
